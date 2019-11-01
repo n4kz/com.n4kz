@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
+    <meta name="description" content="{{ site.description }}" />
+
+    <title>{{ site.title }}</title>
+
+    {% include meta.html %}
+    {% include fonts.html %}
+
+    <link href="https://unpkg.com/purecss@1.0.1/build/base-min.css" rel="stylesheet">
+    <link href="https://unpkg.com/purecss@1.0.1/build/grids-min.css" rel="stylesheet">
+    <link href="https://unpkg.com/purecss@1.0.1/build/grids-responsive-min.css" rel="stylesheet">
+    <link href="/static/css/typography.css" rel="stylesheet">
+    <link href="/static/css/main.css" rel="stylesheet">
+
+    <script src="/static/js/main.js"></script>
+
+    {% if jekyll.environment == 'production' %}
+    <base href="{{ site.url }}">
+    {% endif %}
+  </head>
+  <body>
+    <header>
+      <aside>
+        <span ui>
+          <a type="lang" active>en</a> |
+          <a type="lang" href="/ru">ru</a>
+        </span>
+      </aside>
+    </header>
+
+    {% if page.navigation %}
+      <nav>
+        <span ui>
+          {% for item in page.navigation %}
+            <a href="#{{ item.key }}" key="{{item.key}}" type="link">{{ item.title }}</a>
+
+            {% unless forloop.last %}
+            -
+            {% endunless %}
+          {% endfor %}
+        </span>
+      </nav>
+    {% endif %}
+
+    {{content}}
+
+    <footer>
+      {% if page.navigation %}
+        <i type="mice"></i>
+      {% endif %}
+
+      <aside>
+        {% for item in site.contacts %}
+          <a href="{{ item.value }}" type="button">
+            <i type="{{ item.label }}"></i>
+          </a>
+        {% endfor %}
+      </aside>
+    </footer>
+
+    {% if page.navigation %}
+      <div class="n-h6 n-copy n-center">
+        <a ui>{{ site.copyright }}</a>
+      </div>
+    {% endif %}
+  </body>
+</html>

@@ -1,0 +1,37 @@
+name: Alexander Nazarov
+title: Alexander Nazarov - Mobile App Developer
+
+url: https://n4kz.com
+
+description: >
+  I'm Alexander Nazarov.
+  I design and develop mobile applications and components
+
+contacts:
+  -
+    label: github
+    value: https://github.com/n4kz
+  -
+    label: instagram
+    value: https://instagram.com/n4kz
+  -
+    label: mail
+    value: mailto:n4kz
+
+copyright: >
+  Copyright 2019, Alexander Nazarov. All rights reserved.
+
+# Build settings
+markdown: kramdown
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
