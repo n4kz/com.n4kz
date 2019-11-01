@@ -1,0 +1,99 @@
+html,
+body {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 799px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  html,
+  body {
+    font-size: 10px;
+  }
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 2.5rem;
+  line-height: 1.4em;
+  color: rgba(0, 0, 0, 0.96);
+}
+
+h2,
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 1.75rem;
+  line-height: 1.5em;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@media screen and (max-width: 1279px) {
+  h3 {
+    font-size: 1.25rem;
+    color: rgba(0, 0, 0, 0.72);
+  }
+}
+
+p,
+li,
+span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.5em;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+.n-copy {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  color: rgba(0, 0, 0, 0.36);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a,
+span {
+  white-space: nowrap;
+  color: rgba(0, 0, 0, 0.36);
+}
+
+a {
+  text-decoration: none;
+}
+
+span {
+  cursor: default;
+}
+
+.n-center {
+  text-align: center;
+}
+
+.n-right {
+  text-align: right;
+}
+
+[ui] {
+  cursor: default;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}

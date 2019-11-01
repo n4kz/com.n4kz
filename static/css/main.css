@@ -1,0 +1,285 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  background: url(/static/img/topography.png) repeat #FEFEFE;
+}
+
+/* Layout */
+
+section {
+  box-sizing: border-box;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 0 72px;
+}
+
+section[hero] {
+  height: 100%;
+  min-height: 560px;
+  padding: 10rem 0 0 0;
+}
+
+@media screen and (max-width: 1279px) {
+  section {
+    max-width: 800px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  section {
+    max-width: 640px;
+  }
+}
+
+@media screen and (max-width: 799px) {
+  section {
+    max-width: auto;
+    margin: 0 16px;
+  }
+}
+
+.n-g {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.n-g-tall {
+  margin: 0 0 3rem;
+}
+
+.n-g-tiny {
+  margin: 0 0 1.5rem;
+}
+
+.n-g > * {
+  box-sizing: border-box;
+}
+
+.n-g-center > * {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.n-g-right > * {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+p {
+  margin: 1.5rem 0;
+}
+
+/* Lists */
+
+ul {
+  list-style-type: none;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+/* Navigation */
+
+nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 48px;
+}
+
+nav > span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: inline-block;
+  transform: scale(-1, 1) translate(50%, -50%) rotate(90deg);
+}
+
+nav > span > * {
+  display: inline-block;
+  transform: scale(-1, 1);
+}
+
+@media screen and (max-width: 799px) {
+  nav {
+    top: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: #FFF;
+    padding: 8px 0;
+    z-index: 1;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
+  }
+
+  nav > span {
+    position: static;
+    transform: none;
+  }
+
+  nav > span > * {
+    transform: none;
+  }
+}
+
+/* Header */
+
+header {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  right: 0;
+}
+
+header aside {
+  position: absolute;
+  top: 0;
+  right: 48px;
+  bottom: 0;
+}
+
+@media screen and (max-width: 799px) {
+  header {
+    top: 16px;
+  }
+
+  header aside {
+    right: 16px;
+  }
+}
+
+/* Footer */
+
+footer {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  transform: translate(0, -100%) translate(0, -48px);
+}
+
+footer aside {
+  position: absolute;
+  top: 0;
+  right: 48px;
+  bottom: 0;
+}
+
+footer aside > * {
+  margin-left: 0.25rem;
+}
+
+@media screen and (max-width: 799px) {
+  footer {
+    top: 16px;
+    transform: none;
+  }
+
+  footer aside {
+    left: 16px;
+    right: auto;
+  }
+
+  footer aside > * {
+    margin-right: 0.25rem;
+  }
+}
+
+.n-copy {
+  padding: 16px 0 16px;
+}
+
+@media screen and (max-width: 799px) {
+  .n-copy {
+    padding: 16px 0 48px;
+  }
+}
+
+/* Animations */
+
+@keyframes fade-animation {
+  to {
+    opacity: 0.04;
+  }
+}
+
+/* Icons */
+
+i {
+  width: 2rem;
+  height: 2rem;
+
+  display: block;
+
+  background-size: 1.5rem 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+i[type=mice] {
+  opacity: 0.42;
+  margin: 0 auto;
+  animation: 1.6s infinite alternate ease-in fade-animation;
+  pointer-events: none;
+  background-image: url(/static/svg/mice.svg);
+  display: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  i[type=mice] {
+    display: block;
+  }
+}
+
+i[type=mail] {
+  opacity: 0.42;
+  background-image: url(/static/svg/mail.svg);
+}
+
+i[type=github] {
+  opacity: 0.42;
+  background-image: url(/static/svg/github.svg);
+}
+
+i[type=instagram] {
+  opacity: 0.42;
+  background-image: url(/static/svg/instagram.svg);
+}
+
+/* Links */
+
+a[type=button] {
+  display: inline-block;
+  transition: transform 0.225s ease-in;
+}
+
+a[type=link] {
+  display: inline-block;
+  transition: color 0.225s ease-in;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a[type=button]:hover {
+    transform: translate(0, -2px) scale(1.25);
+  }
+}
+
+a[type=lang] {
+  line-height: 2rem;
+}
+
+a[type=lang][active] {
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+a[type=link][active] {
+  color: rgba(0, 0, 0, 0.72);
+}
