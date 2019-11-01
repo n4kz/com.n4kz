@@ -1,0 +1,57 @@
+-
+  dates: Jan 2017 &mdash; Jun 2019
+  place: Netology-group, foxford.ru
+  title: Mobile Development Team Leader
+  about: >
+    Improved development process by adopting Scrum, CI/CD,
+    e2e-testing. Redesigned company apps and reimplemented them
+    on React Native according to actual UX-trends.
+
+-
+  dates: Dec 2015 &mdash; Jul 2016
+  place: Publishing House 1st September
+  title: Full-Stack Developer
+  about: >
+    Designed, developed, tested and launched digital textbook store,
+    integrated with Drofa and Prosvestchenie publishing houses and their apps.
+
+-
+  dates: Sep 2014 &mdash; Oct 2015
+  place: Publishing House Prosvestchenie
+  title: Mobile Development Team Leader
+  about: >
+    Designed, developed, tested and launched access-management and
+    content-distribution system for digital textbooks. Developed and
+    laucned iOS app for digital textbook. Managed Android and Windows
+    app development. Designed and implemented DRM system.
+
+-
+  dates: Apr 2014 &mdash; Dec 2014
+  place: Eruditor Group, profi.ru
+  title: Senior Backend Developer
+  about: >
+    Optimized, refactored and supported existing data-processing system.
+
+-
+  dates: Sep 2013 &mdash; Mar 2014
+  place: Nemo Group, nemo.tv
+  title: Senior Frontend Developer
+  about: >
+    SmartTV application development.
+
+-
+  dates: Apr 2012 &mdash; Mar 2013
+  place: SUP Media, livejournal.com
+  title: Senior Frontend Developer
+  about: >
+    Refactored templating system, improved overall system architecture.
+    Refactored inbox (internal site messaging system) and re-implemented fronted
+    with new design.
+
+-
+  dates: Oct 2011 &mdash; Apr 2012
+  place: SUP Media, livejournal.com
+  title: Junior Backend Developer
+  about: >
+    Refactored and optimized commenting system, significantly improved site performance.
+
