@@ -283,3 +283,9 @@ a[type=lang][active] {
 nav a[active] {
   color: rgba(0, 0, 0, 0.72);
 }
+
+/* Misc */
+
+#toolbox h2 {
+  margin-bottom: 1rem;
+}
