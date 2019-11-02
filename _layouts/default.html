@@ -36,7 +36,7 @@
       <nav>
         <span ui>
           {% for item in page.navigation %}
-            <a href="#{{ item.key }}" key="{{item.key}}" type="link">{{ item.title }}</a>
+            <a href="#{{ item.key }}">{{ item.title }}</a>
 
             {% unless forloop.last %}
             -

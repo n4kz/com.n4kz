@@ -260,7 +260,7 @@ a[type=button] {
   transition: transform 0.225s ease-in;
 }
 
-a[type=link] {
+nav a {
   display: inline-block;
   transition: color 0.225s ease-in;
 }
@@ -280,6 +280,6 @@ a[type=lang][active] {
   color: rgba(0, 0, 0, 0.72);
 }
 
-a[type=link][active] {
+nav a[active] {
   color: rgba(0, 0, 0, 0.72);
 }
