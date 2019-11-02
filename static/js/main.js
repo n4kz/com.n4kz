@@ -32,6 +32,10 @@ window.addEventListener('load', function () {
       .forEach(function (item, index) {
         var nav = item.section.nav;
 
+        if (null == nav) {
+          return;
+        }
+
         if (!index) {
           active = item.section;
 
