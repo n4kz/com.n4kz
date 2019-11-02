@@ -12,15 +12,16 @@
   title: Tools
   items:
     - PostgreSQL, MySQL, SQLite
-    - MongoDB, Redis, ElasticSearch
+    - MongoDB, Redis, ELK Stack
     - Make, GCC, GDB, Vim, XCode, Sketch, Kite Compositor
-    - Firebase, Travis, Codeclimate, Fabric
+    - Firebase, Travis CI, Codeclimate, Fabric
     - Detox, Jest, Sentry, Crashlytics
 
 -
   title: Protocols
   items:
     - HTTP
+    - HLS
     - XMPP
     - OAuth
     - JSON-RPC
