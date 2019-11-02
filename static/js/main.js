@@ -1,6 +1,7 @@
 window.addEventListener('load', function () {
   'use strict';
 
+  var duration = 225;
   var sections = getSections();
   var active;
 
@@ -47,6 +48,17 @@ window.addEventListener('load', function () {
     element.setAttribute('href', getAddress(element.getAttribute('href')));
   }
 
+  function onClick(event) {
+    var target = event.target;
+    var action = target
+      .getAttribute('data-action');
+
+    if ('scroll' === action) {
+      scrollToElement(find(target.getAttribute('href')));
+      event.preventDefault();
+    }
+  }
+
   function find(selector) {
     return document.querySelector(selector);
   }
@@ -74,6 +86,30 @@ window.addEventListener('load', function () {
       .join('@');
   }
 
+  function scrollToElement(element) {
+    var t0 = Date.now()
+
+    if (null == element) {
+      return;
+    }
+
+    var y0 = window.pageYOffset;
+    var y1 = element.offsetTop;
+
+    function onFrame() {
+      var progress = Math.min(1.0, (Date.now() - t0) / duration);
+      var dy = (y1 - y0) * progress;
+
+      window.scrollTo(0, y0 + dy);
+
+      if (progress < 1.0) {
+        window.requestAnimationFrame(onFrame);
+      }
+    }
+
+    window.requestAnimationFrame(onFrame);
+  }
+
   onLoad();
   onScroll();
 
@@ -82,4 +118,6 @@ window.addEventListener('load', function () {
   } catch (error) {
     window.addEventListener('scroll', onScroll);
   }
+
+  window.addEventListener('click', onClick);
 });
