@@ -22,7 +22,7 @@
   about: >
     Designed, developed, tested and launched access-management and
     content-distribution system for digital textbooks. Developed and
-    laucned iOS app for digital textbook. Managed Android and Windows
+    launched iOS app for digital textbook. Managed Android and Windows
     app development. Designed and implemented DRM system.
 
 -
@@ -44,7 +44,7 @@
   place: SUP Media, livejournal.com
   title: Senior Frontend Developer
   about: >
-    Refactored templating system, improved overall system architecture.
+    Refactored templating system, improved overall system architecture and performance.
     Refactored inbox (internal site messaging system) and re-implemented frontend
     with new design.
 
