@@ -28,8 +28,25 @@
     <header>
       <aside>
         <span ui>
-          <a type="lang" active>en</a> |
-          <a type="lang" href="/ru">ru</a>
+          {%- for lang in site.languages -%}
+            {%- capture href -%}
+              /
+              {%- unless forloop.first -%}
+                {{ lang }}
+              {%- endunless -%}
+            {%- endcapture -%}
+
+            {%- capture active -%}
+              {%- if lang == page.lang -%}
+                active
+              {%- endif -%}
+            {%- endcapture %}
+            <a type="lang" href="{{ href }}" {{ active }}>
+              {{- lang -}}
+            </a>
+
+            {%- unless forloop.last %} | {% endunless %}
+          {%- endfor %}
         </span>
       </aside>
     </header>

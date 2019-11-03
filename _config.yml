@@ -8,4 +8,8 @@ exclude:
   - license.txt
   - vendor
 
+languages:
+  - en
+  - ru
+
 markdown: kramdown
