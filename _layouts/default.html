@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
+    {% assign meta = site.data.meta %}
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
-    <meta name="description" content="{{ site.description }}" />
+    <meta name="description" content="{{ meta.description }}" />
 
-    <title>{{ site.title }}</title>
+    <title>{{ meta.title }}</title>
 
     {% include meta.html %}
     {% include fonts.html %}
@@ -54,7 +56,7 @@
       {% endif %}
 
       <aside>
-        {% for item in site.contacts %}
+        {% for item in site.data.contacts %}
           <a href="{{ item.value }}" type="button">
             <i type="{{ item.label }}"></i>
           </a>
@@ -64,7 +66,7 @@
 
     {% if page.navigation %}
       <div class="n-h6 n-copy n-center">
-        <a ui>{{ site.copyright }}</a>
+        <a ui>{{ meta.copyright }}</a>
       </div>
     {% endif %}
   </body>

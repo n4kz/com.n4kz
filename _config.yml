@@ -1,27 +1,4 @@
-name: Alexander Nazarov
-title: Alexander Nazarov - Mobile App Developer
-
 url: https://n4kz.com
-
-description: >
-  I'm Alexander Nazarov.
-  I design and develop mobile applications and components
-
-contacts:
-  -
-    label: github
-    value: https://github.com/n4kz
-  -
-    label: instagram
-    value: https://instagram.com/n4kz
-  -
-    label: mail
-    value: mailto:n4kz
-
-copyright: >
-  Copyright 2019, Alexander Nazarov. All rights reserved.
-
-markdown: kramdown
 
 exclude:
   - Gemfile
@@ -30,3 +7,5 @@ exclude:
   - readme.md
   - license.txt
   - vendor
+
+markdown: kramdown
