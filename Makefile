@@ -16,7 +16,7 @@ deploy: $(BUNDLE) _site
 clean:
 	rm -rf _site
 
-$(BUNDLE): Gemfile.lock
+$(BUNDLE): Gemfile
 	bundle install
 
 _site: _config.yml
