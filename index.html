@@ -1,62 +1,13 @@
 ---
-layout: default
+layout: landing
 navigation:
   -
     key: personal
     title: Personal
-
   -
     key: experience
     title: Experience
-
   -
     key: toolbox
     title: Toolbox
 ---
-
-<section id="personal" hero>
-  <div class="pure-g n-g n-g-tall">
-    <div class="pure-u-1">
-      <h1>{{ site.data.personal.title }}</h1>
-    </div>
-  </div>
-
-  <div class="pure-g n-g">
-    <div class="pure-u-1">
-      <h2>{{ site.data.personal.description }}</h2>
-    </div>
-  </div>
-</section>
-
-<section id="experience">
-  {% for item in site.data.experience %}
-    <div class="pure-g n-g n-g-tiny n-g-compact">
-      <div class="pure-u-1 pure-u-xl-1-3">
-        <h3>{{ item.dates }}</h3>
-      </div>
-
-      <div class="pure-u-1 pure-u-xl-2-3">
-        <h2>{{ item.place }}<br>{{ item.title }}</h2>
-        <p>{{ item.about }}</p>
-      </div>
-    </div>
-  {% endfor %}
-</section>
-
-<section id="toolbox">
-  {% for set in site.data.toolbox %}
-    <div class="pure-g n-g n-g-tiny n-g-right">
-      <div class="pure-u-1 pure-u-md-1-3">
-        <h2>{{ set.title }}</h2>
-      </div>
-
-      <div class="pure-u-1 pure-u-md-2-3">
-        <ul>
-          {% for item in set.items %}
-            <li>- {{ item }}</li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  {% endfor %}
-</section>

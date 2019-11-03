@@ -1,0 +1,14 @@
+<section id="experience">
+  {% for item in site.data.experience %}
+    <div class="pure-g n-g n-g-tiny n-g-compact">
+      <div class="pure-u-1 pure-u-xl-1-3">
+        <h3>{{ item.dates }}</h3>
+      </div>
+
+      <div class="pure-u-1 pure-u-xl-2-3">
+        <h2>{{ item.place }}<br>{{ item.title }}</h2>
+        <p>{{ item.about }}</p>
+      </div>
+    </div>
+  {% endfor %}
+</section>
