@@ -15,5 +15,6 @@ layout: default
 </nav>
 
 {% for item in page.navigation %}
-  {% include {{ item.key | append: ".html" }} %}
+  {% assign data = site.data[page.lang][item.key] %}
+  {% include {{ item.key | append: ".html" }} data=data %}
 {% endfor %}
