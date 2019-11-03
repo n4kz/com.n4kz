@@ -2,11 +2,13 @@
 layout: default
 ---
 
+{% assign data = site.data[page.lang] %}
+
 <nav>
   <span ui>
-    {%- for item in page.navigation %}
-      <a href="#{{ item.key }}" data-action="scroll">
-        {{- item.title -}}
+    {%- for key in page.navigation %}
+      <a href="#{{ key }}" data-action="scroll">
+        {{- data[key].label -}}
       </a>
 
       {%- unless forloop.last %} &ndash; {% endunless %}
@@ -14,7 +16,7 @@ layout: default
   </span>
 </nav>
 
-{% for item in page.navigation %}
-  {% assign data = site.data[page.lang][item.key] %}
-  {% include {{ item.key | append: ".html" }} data=data %}
+{% for key in page.navigation %}
+  {% assign item = data[key] %}
+  {% include {{ key | append: ".html" }} data=item %}
 {% endfor %}

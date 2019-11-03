@@ -1,29 +1,31 @@
--
-  title: Навыки
-  items:
-    - mac OS, GNU/Linux, FreeBSD
-    - JavaScript (React Native, node.js, CoffeeScript)
-    - C/Objective-C, iOS
-    - Perl (Catalyst, Mojolicious, DBIx::Class)
-    - Git, Mercurial, Subversion
-    - Bash
+label: Инструментарий
+items:
+  -
+    title: Навыки
+    items:
+      - mac OS, GNU/Linux, FreeBSD
+      - JavaScript (React Native, node.js, CoffeeScript)
+      - C/Objective-C, iOS
+      - Perl (Catalyst, Mojolicious, DBIx::Class)
+      - Git, Mercurial, Subversion
+      - Bash
 
--
-  title: Инструменты
-  items:
-    - PostgreSQL, MySQL, SQLite
-    - MongoDB, Redis, ELK Stack
-    - Make, GCC, GDB, Vim, XCode, Sketch, Kite Compositor
-    - Firebase, Travis CI, Codeclimate, Fabric
-    - Detox, Jest, Sentry, Crashlytics
+  -
+    title: Инструменты
+    items:
+      - PostgreSQL, MySQL, SQLite
+      - MongoDB, Redis, ELK Stack
+      - Make, GCC, GDB, Vim, XCode, Sketch, Kite Compositor
+      - Firebase, Travis CI, Codeclimate, Fabric
+      - Detox, Jest, Sentry, Crashlytics
 
--
-  title: Протоколы
-  items:
-    - HTTP
-    - HLS
-    - XMPP
-    - OAuth
-    - JSON-RPC
-    - IMAP
-    - WebSocket
+  -
+    title: Протоколы
+    items:
+      - HTTP
+      - HLS
+      - XMPP
+      - OAuth
+      - JSON-RPC
+      - IMAP
+      - WebSocket
