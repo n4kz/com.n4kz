@@ -18,5 +18,8 @@ layout: default
 
 {% for key in page.navigation %}
   {% assign item = data[key] %}
+  {% unless forloop.first -%}
+    <hr />
+  {%- endunless %}
   {% include {{ key | append: ".html" }} data=item %}
 {% endfor %}
