@@ -5,9 +5,10 @@ items:
     place: Netology-group, foxford.ru
     title: Mobile Development Team Leader
     about: >
-      Improved development process by adopting Scrum, CI/CD,
-      e2e-testing. Redesigned company apps and reimplemented them
-      on React Native according to actual UX-trends.
+      Improved development process by adopting Scrum, CI/CD, e2e-testing.
+      Redesigned company apps and reimplemented them on React Native
+      according to actual UX-trends. Adopted Firebase platform for
+      A/B testing, analytics, push-notifications and remote configuration.
 
   -
     dates: Dec 2015 &ndash; Jul 2016
