@@ -144,6 +144,7 @@ nav > span > * {
 /* Header */
 
 header {
+  z-index: 2;
   position: absolute;
   top: 48px;
   left: 0;
