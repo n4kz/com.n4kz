@@ -10,10 +10,17 @@ body {
   }
 }
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: 479px) {
   html,
   body {
     font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  html,
+  body {
+    font-size: 8px;
   }
 }
 

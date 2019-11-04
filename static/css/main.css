@@ -15,7 +15,7 @@ section {
   box-sizing: border-box;
   max-width: 960px;
   margin: 0 auto;
-  padding: 24px 0 72px;
+  padding: 2rem 0 4rem;
 }
 
 section[hero] {
@@ -40,6 +40,12 @@ section[hero] {
   section {
     max-width: auto;
     margin: 0 16px;
+  }
+
+  section[hero] {
+    height: auto;
+    min-height: auto;
+    padding: 10rem 0 8rem;
   }
 }
 
@@ -84,6 +90,12 @@ ul,
 li {
   padding: 0;
   margin: 0;
+}
+
+@media screen and (max-width: 799px) {
+  ul {
+    margin: 1rem 0 0;
+  }
 }
 
 /* Navigation */
@@ -283,10 +295,4 @@ a[type=lang][active] {
 
 nav a[active] {
   color: rgba(0, 0, 0, 0.72);
-}
-
-/* Misc */
-
-#toolbox h2 {
-  margin-bottom: 1rem;
 }
