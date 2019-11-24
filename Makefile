@@ -1,7 +1,7 @@
 JEKYLL_ENV=production
 
 HOST=n4kz.com
-TARGET=~/www
+TARGET=~/www/$(HOST)
 
 BUNDLE=vendor/bundle
 
