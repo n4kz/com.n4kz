@@ -3,7 +3,7 @@ items:
   -
     title: Навыки
     items:
-      - mac OS, GNU/Linux, FreeBSD
+      - macOS, GNU/Linux, FreeBSD
       - JavaScript (React Native, node.js, CoffeeScript)
       - C/Objective-C, iOS
       - Perl (Catalyst, Mojolicious, DBIx::Class)
@@ -15,7 +15,7 @@ items:
     items:
       - PostgreSQL, MySQL, SQLite
       - MongoDB, Redis, ELK Stack
-      - Make, GCC, GDB, Vim, XCode, Sketch, Kite Compositor
+      - Make, GCC, GDB, Vim, Xcode, Sketch, Kite Compositor
       - Firebase, Travis CI, Codeclimate, Fabric
       - Detox, Jest, Sentry, Crashlytics
 
