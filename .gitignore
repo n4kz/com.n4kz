@@ -4,5 +4,6 @@ _site
 vendor
 .sass-cache
 .jekyll-metadata
+.jekyll-cache
 
 *.sw[po]
