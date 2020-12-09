@@ -1,5 +1,13 @@
 label: Experience
 items:
+  - dates: Feb 2020 &ndash; Dec 2020
+    place: WSM Group, MuseScore
+    title: Mobile Development Team Leader
+    about: >
+      Refactored existing React Native app. Improved architecture, reliability and
+      performance. Rethinked release process and adopted best quality assurance
+      practices. Refined UI consistency and improved UX.
+
   -
     dates: Jan 2017 &ndash; Jun 2019
     place: Netology-group, foxford.ru
@@ -47,14 +55,15 @@ items:
     place: SUP Media, livejournal.com
     title: Senior Frontend Developer
     about: >
-      Refactored templating system, improved overall system architecture and performance.
-      Refactored inbox (internal site messaging system) and re-implemented frontend
-      with new design.
+      Refactored templating system, improved overall system architecture and
+      performance. Refactored inbox (internal site messaging system) and
+      re-implemented frontend with new design.
 
   -
     dates: Oct 2011 &ndash; Apr 2012
     place: SUP Media, livejournal.com
     title: Junior Backend Developer
     about: >
-      Refactored and optimized commenting system, significantly improved site performance.
+      Refactored and optimized commenting system, significantly improved site
+      performance.
 
