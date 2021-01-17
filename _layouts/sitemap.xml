@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+{%- for lang in site.languages -%}
+  {%- capture loc -%}
+    {{ site.url }}/
+    {%- unless forloop.first -%}
+      {{ lang }}
+    {%- endunless -%}
+  {%- endcapture %}
+  <url>
+    <loc>{{ loc }}</loc>
+    <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod>
+    {%- for hreflang in site.languages -%}
+      {%- capture href -%}
+        {{ site.url }}/
+        {%- unless forloop.first -%}
+          {{ hreflang }}
+        {%- endunless -%}
+      {%- endcapture %}
+    <xhtml:link rel="alternate" hreflang="{{ hreflang }}" href="{{ href }}" />
+    {%- endfor %}
+  </url>
+{%- endfor %}
+</urlset>
