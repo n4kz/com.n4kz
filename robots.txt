@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://n4kz.com/sitemap.xml
