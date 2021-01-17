@@ -1,5 +1,7 @@
 url: https://n4kz.com
 
+cover: /static/img/cover.jpg
+
 exclude:
   - Gemfile
   - Gemfile.lock
