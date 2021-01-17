@@ -1,0 +1,36 @@
+header,
+footer,
+nav,
+hr,
+.n-copy {
+  display: none;
+}
+
+html,
+body {
+  font-size: 12px;
+  height: auto;
+}
+
+body {
+  background: none;
+}
+
+section[hero] {
+  height: auto;
+  min-height: auto;
+  padding: 2rem 0 4rem;
+}
+
+section div {
+  page-break-inside: avoid;
+}
+
+h3 {
+  font-size: 1.25rem;
+  color: rgba(0, 0, 0, 0.72);
+}
+
+@page {
+  margin: 2cm 2cm 1cm
+}
