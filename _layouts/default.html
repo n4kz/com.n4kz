@@ -45,24 +45,22 @@
 
     {{ content }}
 
-    <footer>
-      {% if page.navigation %}
-        <i type="mice"></i>
-      {% endif %}
-
-      <aside>
-        {% for item in site.data.contacts %}
-          <a href="{{ item.value }}" type="button">
-            <i type="{{ item.label }}"></i>
-          </a>
-        {% endfor %}
-      </aside>
-    </footer>
-
     {% if page.navigation %}
-      <div class="n-h6 n-copy n-center">
-        <a ui>{{ meta.copyright }}</a>
-      </div>
-    {% endif %}
+      <section copy>
+        <h6 class="n-center" ui>{{ meta.copyright }}</h6>
+      </section>
+
+      <footer>
+        <i type="mice"></i>
+
+        <aside>
+          {%- for item in site.data.contacts %}
+            <a href="{{ item.value }}" type="button">
+              <i type="{{ item.label }}"></i>
+            </a>
+          {%- endfor %}
+        </aside>
+      </footer>
+    {%- endif %}
   </body>
 </html>

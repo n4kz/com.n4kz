@@ -73,7 +73,7 @@ window.addEventListener('load', function () {
   }
 
   function getSections() {
-    return findAll('section')
+    return findAll('section[id]')
       .map(function (element) {
         var id = element.id;
 

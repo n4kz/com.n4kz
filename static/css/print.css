@@ -2,7 +2,7 @@ header,
 footer,
 nav,
 hr,
-.n-copy {
+section[copy] {
   display: none;
 }
 
