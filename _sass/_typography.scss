@@ -1,23 +1,26 @@
+@import "breakpoints";
+@import "colors";
+
 html,
 body {
   font-size: 16px;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: $breakpoints-md) {
   html,
   body {
     font-size: 12px;
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: $breakpoints-sm) {
   html,
   body {
     font-size: 10px;
   }
 }
 
-@media screen and (max-width: 359px) {
+@media screen and (max-width: $breakpoints-xs) {
   html,
   body {
     font-size: 8px;
@@ -29,7 +32,7 @@ h1 {
   font-weight: 200;
   font-size: 2.5rem;
   line-height: 1.4em;
-  color: rgba(0, 0, 0, 0.96);
+  color: $colors-text-lead;
 }
 
 h2,
@@ -38,13 +41,13 @@ h3 {
   font-weight: 300;
   font-size: 1.75rem;
   line-height: 1.5em;
-  color: rgba(0, 0, 0, 0.87);
+  color: $colors-text-head;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $breakpoints-xl) {
   h3 {
     font-size: 1.25rem;
-    color: rgba(0, 0, 0, 0.72);
+    color: $colors-text-body;
   }
 }
 
@@ -55,7 +58,7 @@ span {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.5em;
-  color: rgba(0, 0, 0, 0.72);
+  color: $colors-text-body;
 }
 
 h6 {
@@ -63,17 +66,21 @@ h6 {
   font-weight: 400;
   font-size: 0.75rem;
   line-height: 1.5rem;
-  color: rgba(0, 0, 0, 0.36);
+  color: $colors-text-note;
 }
 
 a,
 span {
   white-space: nowrap;
-  color: rgba(0, 0, 0, 0.36);
+  color: $colors-text-note;
 }
 
 a {
   text-decoration: none;
+}
+
+a[active] {
+  color: $colors-text-body;
 }
 
 span {

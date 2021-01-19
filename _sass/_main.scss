@@ -1,3 +1,6 @@
+@import "breakpoints";
+@import "colors";
+
 html,
 body {
   height: 100%;
@@ -6,7 +9,7 @@ body {
 }
 
 body {
-  background: url(/static/img/topography.png) repeat #FEFEFE;
+  background: url(/static/img/topography.png) repeat $colors-site;
 }
 
 /* Layout */
@@ -46,19 +49,19 @@ section[copy] {
   padding: 4rem 0 1rem;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: $breakpoints-xl) {
   section {
     max-width: 800px;
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: $breakpoints-lg) {
   section {
     max-width: 640px;
   }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: $breakpoints-md) {
   section {
     max-width: none;
     margin: 0 2rem;
@@ -96,13 +99,13 @@ p {
   flex: 2;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: $breakpoints-lg) {
   [md-flex] {
     display: block;
   }
 }
 
-@media (max-width: 1279px) {
+@media (max-width: $breakpoints-xl) {
   [lg-flex] {
     display: block;
   }
@@ -120,7 +123,7 @@ li {
   margin: 0;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: $breakpoints-md) {
   ul {
     margin: 1rem 0 0;
   }
@@ -148,16 +151,16 @@ nav > span > * {
   transform: scale(-1, 1);
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: $breakpoints-md) {
   nav {
     top: auto;
     left: 0;
     right: 0;
     text-align: center;
-    background-color: #FFF;
+    background-color: $colors-menu;
     padding: 8px 0;
     z-index: 1;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 2px 4px $colors-shadow;
   }
 
   nav > span {
@@ -187,7 +190,7 @@ header aside {
   bottom: 0;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: $breakpoints-md) {
   header {
     top: 2.25rem;
   }
@@ -218,7 +221,7 @@ footer aside > * {
   margin-left: 0.25rem;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: $breakpoints-md) {
   footer {
     top: 2rem;
     transform: none;
@@ -257,9 +260,7 @@ hr {
 i {
   width: 2rem;
   height: 2rem;
-
   display: block;
-
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-position: center;
@@ -319,9 +320,4 @@ a[type=lang] {
 
 a[type=lang][active] {
   pointer-events: none;
-  color: rgba(0, 0, 0, 0.72);
-}
-
-nav a[active] {
-  color: rgba(0, 0, 0, 0.72);
 }
