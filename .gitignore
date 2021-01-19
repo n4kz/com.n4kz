@@ -2,6 +2,7 @@
 
 _site
 _sass/_icons.scss
+_sass/_normalize.scss
 
 vendor
 .sass-cache

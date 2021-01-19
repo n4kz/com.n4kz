@@ -1,5 +1,9 @@
 ---
 ---
 
+@import "normalize";
+
+/*! n4kz.com v={{ site.time | date: '%s' }} */
+
 @import "typography";
 @import "main";
