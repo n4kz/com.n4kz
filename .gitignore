@@ -1,6 +1,8 @@
 .DS_Store
 
 _site
+_sass/_icons.scss
+
 vendor
 .sass-cache
 .jekyll-metadata

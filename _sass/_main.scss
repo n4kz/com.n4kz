@@ -1,5 +1,6 @@
 @import "breakpoints";
 @import "colors";
+@import "icons";
 
 html,
 body {
@@ -244,7 +245,7 @@ hr {
   height: 3rem;
   border: 0;
   opacity: 0.24;
-  background: url(/static/svg/mountains.svg) center/contain no-repeat;
+  background: $icons-mountains center/contain no-repeat;
 }
 
 /* Animations */
@@ -261,17 +262,17 @@ i {
   width: 2rem;
   height: 2rem;
   display: block;
+  opacity: 0.42;
   background-size: 1.5rem 1.5rem;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 i[type=mice] {
-  opacity: 0.42;
   margin: 0 auto;
   animation: 1.6s infinite alternate ease-in fade-animation;
   pointer-events: none;
-  background-image: url(/static/svg/mice.svg);
+  background-image: $icons-mice;
   display: none;
 }
 
@@ -282,18 +283,15 @@ i[type=mice] {
 }
 
 i[type=mail] {
-  opacity: 0.42;
-  background-image: url(/static/svg/mail.svg);
+  background-image: $icons-mail;
 }
 
 i[type=github] {
-  opacity: 0.42;
-  background-image: url(/static/svg/github.svg);
+  background-image: $icons-github;
 }
 
 i[type=instagram] {
-  opacity: 0.42;
-  background-image: url(/static/svg/instagram.svg);
+  background-image: $icons-instagram;
 }
 
 /* Links */
