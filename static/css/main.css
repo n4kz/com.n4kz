@@ -18,16 +18,28 @@ h6 {
   margin: 0;
 }
 
+div {
+  box-sizing: border-box;
+}
+
 section {
   box-sizing: border-box;
   max-width: 960px;
   margin: 0 auto;
 }
 
+section > * + * {
+  margin-top: 1.5rem;
+}
+
 section[hero] {
   height: 100%;
   min-height: 560px;
   padding: 10rem 0 0 0;
+}
+
+section[hero] > * + * {
+  margin-top: 3rem;
 }
 
 section[copy] {
@@ -63,35 +75,37 @@ section[copy] {
   }
 }
 
-.n-g {
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.n-g-tall {
-  margin: 0 0 3rem;
-}
-
-.n-g-tiny {
-  margin: 0 0 1.5rem;
-}
-
-.n-g > * {
-  box-sizing: border-box;
-}
-
-.n-g-center > * {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.n-g-right > * {
-  margin-left: 0;
-  margin-right: auto;
-}
-
 p {
   margin: 1.5rem 0;
+}
+
+/* Grids */
+
+[md-flex],
+[lg-flex] {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+[flex-1] {
+  flex: 1;
+}
+
+[flex-2] {
+  flex: 2;
+}
+
+@media (max-width: 1023px) {
+  [md-flex] {
+    display: block;
+  }
+}
+
+@media (max-width: 1279px) {
+  [lg-flex] {
+    display: block;
+  }
 }
 
 /* Lists */
@@ -283,7 +297,7 @@ i[type=instagram] {
 
 /* Links */
 
-a[type=button] {
+a[type=link] {
   display: inline-block;
   transition: transform 0.225s ease-in;
 }
@@ -294,7 +308,7 @@ nav a {
 }
 
 @media (hover: hover) and (pointer: fine) {
-  a[type=button]:hover {
+  a[type=link]:hover {
     transform: translate(0, -2px) scale(1.25);
   }
 }
