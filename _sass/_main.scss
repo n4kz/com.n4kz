@@ -319,3 +319,46 @@ a[type=lang] {
 a[type=lang][active] {
   pointer-events: none;
 }
+
+/* Print */
+
+@media print {
+  header,
+  footer,
+  nav,
+  hr,
+  section[copy] {
+    display: none;
+  }
+
+  html,
+  body {
+    height: auto;
+  }
+
+  body {
+    background: none;
+  }
+
+  ul {
+    margin: 1rem 0 0;
+  }
+
+  section {
+    padding: 2rem 0;
+  }
+
+  section[hero] {
+    height: auto;
+    min-height: auto;
+    padding: 2rem 0 4rem;
+  }
+
+  section div {
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 2cm 2cm 1cm
+  }
+}

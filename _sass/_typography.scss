@@ -100,3 +100,12 @@ span {
   -ms-user-select: none;
   user-select: none;
 }
+
+/* Print */
+
+@media print {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
