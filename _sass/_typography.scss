@@ -44,9 +44,10 @@ h3 {
   color: $colors-text-head;
 }
 
-@media screen and (max-width: $breakpoints-xl) {
+@media (max-width: $breakpoints-xl) {
   h3 {
     font-size: 1.25rem;
+    line-height: 2em;
     color: $colors-text-body;
   }
 }
@@ -65,7 +66,7 @@ h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 0.75rem;
-  line-height: 1.5rem;
+  line-height: 2em;
   color: $colors-text-note;
 }
 
