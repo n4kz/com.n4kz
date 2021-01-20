@@ -4,7 +4,7 @@ items:
     title: Skills
     items:
       - macOS, GNU/Linux, FreeBSD
-      - JavaScript (React Native, node.js, CoffeeScript)
+      - JavaScript (React Native, Node.js)
       - C/Objective-C, iOS
       - Perl (Catalyst, Mojolicious, DBIx::Class)
       - Git, Mercurial, Subversion
@@ -15,8 +15,9 @@ items:
     items:
       - PostgreSQL, MySQL, SQLite
       - MongoDB, Redis, ELK Stack
-      - Make, GCC, GDB, Vim, Xcode, Sketch, Kite Compositor
-      - Firebase, Travis CI, Codeclimate, Fabric
+      - Make, GCC, GDB, Vim, Xcode
+      - Sketch, Kite Compositor
+      - Firebase, Travis CI, Codeclimate, Fastlane
       - Detox, Jest, Sentry, Crashlytics
 
   -
@@ -28,4 +29,3 @@ items:
       - OAuth
       - JSON-RPC
       - IMAP
-      - WebSocket
