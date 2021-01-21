@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
   <head>
-    {%- assign meta = site.data[page.lang].meta %}
+    {%- assign meta = site.data[page.lang].meta -%}
+    {%- assign revision = site.time | date: '%s' %}
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0" />
     <meta name="description" content="{{ meta.description }}" />
@@ -9,12 +10,16 @@
     <title>{{ meta.title }}</title>
 
     {%- include meta.html -%}
-    {%- include styles.html -%}
+
     {%- if jekyll.environment == 'production' %}
     <base href="{{ site.url }}">
     {%- endif %}
 
-    <script defer src="/static/js/main.js?v={{ site.time | date: '%s' }}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400&subset=cyrillic" rel="stylesheet">
+    <link href="/static/css/main.css?v={{ revision }}" rel="stylesheet">
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+
+    <script defer src="/static/js/main.js?v={{ revision }}"></script>
   </head>
   <body>
     <header>
