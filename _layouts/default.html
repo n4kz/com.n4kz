@@ -14,7 +14,7 @@
     <base href="{{ site.url }}">
     {%- endif %}
 
-    <script defer src="/static/js/main.js"></script>
+    <script defer src="/static/js/main.js?v={{ site.time | date: '%s' }}"></script>
   </head>
   <body>
     <header>
