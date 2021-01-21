@@ -23,29 +23,27 @@
   </head>
   <body>
     <header>
-      <aside>
-        <span ui>
-          {%- for lang in site.languages -%}
-            {%- capture href -%}
-              /
-              {%- unless forloop.first -%}
-                {{ lang }}
-              {%- endunless -%}
-            {%- endcapture -%}
+      <span ui>
+        {%- for lang in site.languages -%}
+          {%- capture href -%}
+            /
+            {%- unless forloop.first -%}
+              {{ lang }}
+            {%- endunless -%}
+          {%- endcapture -%}
 
-            {%- capture active -%}
-              {%- if lang == page.lang -%}
-                active
-              {%- endif -%}
-            {%- endcapture %}
-            <a type="lang" href="{{ href }}" {{ active }}>
-              {{- lang -}}
-            </a>
+          {%- capture active -%}
+            {%- if lang == page.lang -%}
+              active
+            {%- endif -%}
+          {%- endcapture %}
+          <a type="lang" href="{{ href }}" {{ active }}>
+            {{- lang -}}
+          </a>
 
-            {%- unless forloop.last %} | {% endunless %}
-          {%- endfor %}
-        </span>
-      </aside>
+          {%- unless forloop.last %} | {% endunless %}
+        {%- endfor %}
+      </span>
     </header>
 
     {{ content }}
@@ -56,15 +54,11 @@
       </section>
 
       <footer>
-        <i type="mice"></i>
-
-        <aside>
-          {%- for item in site.data.contacts %}
-            <a href="{{ item.value }}" type="link">
-              <i type="{{ item.label }}"></i>
-            </a>
-          {%- endfor %}
-        </aside>
+        {%- for item in site.data.contacts %}
+          <a href="{{ item.value }}" type="link">
+            <i type="{{ item.label }}"></i>
+          </a>
+        {%- endfor %}
       </footer>
     {%- endif %}
   </body>

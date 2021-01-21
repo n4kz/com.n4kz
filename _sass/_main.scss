@@ -2,6 +2,19 @@
 @import "colors";
 @import "icons";
 
+$side-margin: 48px;
+
+@mixin icon {
+    display: block;
+    width: 2em;
+    height: 2em;
+    pointer-events: none;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.42;
+}
+
 html,
 body {
   height: 100%;
@@ -40,6 +53,7 @@ section > * + * {
 }
 
 section[hero] {
+  position: relative;
   height: 100%;
   min-height: 560px;
   padding: 10rem 0 0 0;
@@ -48,6 +62,21 @@ section[hero] {
 section[copy] {
   padding: 4rem 0 1rem;
   text-align: center;
+}
+
+@media screen and (hover: hover) and (pointer: fine) {
+  section[hero]:after {
+    content: " ";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-1rem, -$side-margin);
+
+    @include icon;
+
+    background-image: $icons-mice;
+    animation: 1.6s infinite alternate ease-in fade-animation;
+  }
 }
 
 @media screen and (max-width: $breakpoints-xl) {
@@ -72,6 +101,10 @@ section[copy] {
     height: auto;
     min-height: auto;
     padding: 10rem 0 5rem;
+  }
+
+  section[hero]:after {
+    display: none;
   }
 
   section[copy] {
@@ -132,7 +165,7 @@ nav {
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 48px;
+  left: $side-margin;
 }
 
 nav > span {
@@ -174,25 +207,15 @@ nav > span > * {
 
 header {
   z-index: 2;
+  text-align: right;
   position: absolute;
-  top: 48px;
-  left: 0;
-  right: 0;
-}
-
-header aside {
-  position: absolute;
-  top: 0;
-  right: 48px;
-  bottom: 0;
+  top: $side-margin;
+  right: $side-margin;
 }
 
 @media screen and (max-width: $breakpoints-md) {
   header {
-    top: 2.25rem;
-  }
-
-  header aside {
+    top: 2rem;
     right: 2rem;
   }
 }
@@ -202,35 +225,25 @@ header aside {
 footer {
   position: absolute;
   top: 100%;
-  width: 100%;
+  right: $side-margin;
   height: 2rem;
-  transform: translate(0, -100%) translate(0, -48px);
+  transform: translate(0, -100%) translate(0, -$side-margin);
 }
 
-footer aside {
-  position: absolute;
-  top: 0;
-  right: 48px;
-  bottom: 0;
-}
-
-footer aside > * {
-  margin-left: 0.25rem;
+footer > * + * {
+  margin: 0 0 0 0.5rem;
 }
 
 @media screen and (max-width: $breakpoints-md) {
   footer {
-    top: 2.25rem;
+    top: 2rem;
+    left: 2rem;
+    right: unset;
     transform: none;
   }
 
-  footer aside {
-    left: 2rem;
-    right: auto;
-  }
-
-  footer aside > * {
-    margin: 0 1rem 0 0;
+  footer > * + * {
+    margin: 0 0 0 1rem;
   }
 }
 
@@ -254,28 +267,8 @@ hr {
 
 /* Icons */
 
-i {
-  width: 2rem;
-  height: 2rem;
-  display: block;
-  opacity: 0.42;
-  background-size: 1.5rem 1.5rem;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-i[type=mice] {
-  margin: 0 auto;
-  animation: 1.6s infinite alternate ease-in fade-animation;
-  pointer-events: none;
-  background-image: $icons-mice;
-  display: none;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  i[type=mice] {
-    display: block;
-  }
+i[type] {
+  @include icon;
 }
 
 i[type=mail] {
