@@ -71,7 +71,7 @@ span {
 small {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   line-height: 2em;
   color: $colors-text-note;
 }
@@ -88,6 +88,12 @@ a {
 
 a[active] {
   color: $colors-text-body;
+}
+
+section a[href] {
+  -webkit-text-decoration: underline dotted;
+  -moz-text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 span {

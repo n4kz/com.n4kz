@@ -42,7 +42,7 @@
             {{- lang -}}
           </a>
 
-          {%- unless forloop.last %} | {% endunless %}
+          {%- unless forloop.last %} | {% endunless -%}
         {%- endfor %}
       </span>
     </header>
@@ -50,17 +50,20 @@
     {{ content }}
 
     {% if page.navigation %}
+      <section contacts>
+        <small ui>
+        {%- for item in site.data.contacts %}
+          <a href="{{ item.value }}">
+            {{- item.label -}}
+          </a>
+          {%- unless forloop.last %} &bull; {% endunless -%}
+        {%- endfor %}
+        </small>
+      </section>
+
       <section copy>
         <small ui>{{ meta.copyright }}</small>
       </section>
-
-      <footer>
-        {%- for item in site.data.contacts %}
-          <a href="{{ item.value }}" type="link">
-            <i type="{{ item.label }}"></i>
-          </a>
-        {%- endfor %}
-      </footer>
     {%- endif %}
   </body>
 </html>

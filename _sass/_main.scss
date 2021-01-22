@@ -59,8 +59,13 @@ section[hero] {
   padding: 10rem 0 0 0;
 }
 
+section[contacts] {
+  padding: 4rem 0 0;
+  text-align: center;
+}
+
 section[copy] {
-  padding: 4rem 0 1rem;
+  padding: 0 0 1rem;
   text-align: center;
 }
 
@@ -107,8 +112,12 @@ section[copy] {
     display: none;
   }
 
+  section[contacts] {
+    padding: 4rem 0 0;
+  }
+
   section[copy] {
-    padding: 4rem 0;
+    padding: 0 0 4rem;
   }
 }
 
@@ -220,33 +229,6 @@ header {
   }
 }
 
-/* Footer */
-
-footer {
-  position: absolute;
-  top: 100%;
-  right: $side-margin;
-  height: 2rem;
-  transform: translate(0, -100%) translate(0, -$side-margin);
-}
-
-footer > * + * {
-  margin: 0 0 0 0.5rem;
-}
-
-@media screen and (max-width: $breakpoints-md) {
-  footer {
-    top: 2rem;
-    left: 2rem;
-    right: unset;
-    transform: none;
-  }
-
-  footer > * + * {
-    margin: 0 0 0 1rem;
-  }
-}
-
 /* Break */
 
 hr {
@@ -271,34 +253,11 @@ i[type] {
   @include icon;
 }
 
-i[type=mail] {
-  background-image: $icons-mail;
-}
-
-i[type=github] {
-  background-image: $icons-github;
-}
-
-i[type=instagram] {
-  background-image: $icons-instagram;
-}
-
 /* Links */
-
-a[type=link] {
-  display: inline-block;
-  transition: transform 0.225s ease-in;
-}
 
 nav a {
   display: inline-block;
   transition: color 0.225s ease-in;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  a[type=link]:hover {
-    transform: translate(0, -2px) scale(1.25);
-  }
 }
 
 a[type=lang] {
@@ -313,9 +272,9 @@ a[type=lang][active] {
 
 @media print {
   header,
-  footer,
   nav,
   hr,
+  section[contacts],
   section[copy] {
     display: none;
   }
