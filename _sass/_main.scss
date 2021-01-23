@@ -12,7 +12,7 @@ $side-margin: 48px;
     background-size: 75% 75%;
     background-repeat: no-repeat;
     background-position: center;
-    opacity: 0.42;
+    opacity: $opacity-icon;
 }
 
 html,
@@ -75,12 +75,12 @@ section[copy] {
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translate(-1rem, -$side-margin);
+    transform: translate(-50%, -$side-margin);
 
     @include icon;
 
     background-image: $icons-mice;
-    animation: 1.6s infinite alternate ease-in fade-animation;
+    animation: 1.6s ease-in infinite alternate fade-out;
   }
 }
 
@@ -235,15 +235,15 @@ hr {
   margin: 4rem 0;
   height: 3rem;
   border: 0;
-  opacity: 0.24;
+  opacity: $opacity-line;
   background: $icons-mountains center/contain no-repeat;
 }
 
 /* Animations */
 
-@keyframes fade-animation {
+@keyframes fade-out {
   to {
-    opacity: 0.04;
+    opacity: 0;
   }
 }
 
