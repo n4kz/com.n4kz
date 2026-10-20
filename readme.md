@@ -1,6 +1,9 @@
 ## Synopsis
 
 ```bash
+  # Install dependencies
+  make install
+
   # Run server on local host
   make local
 
@@ -12,4 +15,4 @@
 
 BSD License
 
-Copyright 2019-2021 Alexander Nazarov. All rights reserved.
+Copyright 2026 Alexander Nazarov. All rights reserved.
