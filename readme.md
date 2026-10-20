@@ -15,4 +15,4 @@
 
 BSD License
 
-Copyright 2026 Alexander Nazarov. All rights reserved.
+Copyright 2019-2026 Alexander Nazarov. All rights reserved.
