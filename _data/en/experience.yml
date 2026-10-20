@@ -1,5 +1,15 @@
 label: Experience
 items:
+  - dates: Mar 2021 &ndash; Feb 2025
+    place: Qlean
+    title: Head of Mobile Development
+    about: >
+      Designed and implemented a modular architecture for the company's apps. Developed
+      a custom UIKit. Successfully executed a migration strategy to transition legacy apps
+      to the new architecture. Established and streamlined release management process.
+      Adopted Firebase platform for A/B testing, analytics, push-notifications
+      and remote configuration.
+
   - dates: Feb 2020 &ndash; Dec 2020
     place: WSM Group, MuseScore
     title: Mobile Development Team Leader
@@ -14,7 +24,7 @@ items:
     title: Mobile Development Team Leader
     about: >
       Improved development process by adopting Scrum, CI/CD, e2e-testing.
-      Redesigned company apps and reimplemented them on React Native
+      Redesigned the company's apps and reimplemented them using React Native
       according to actual UX-trends. Adopted Firebase platform for
       A/B testing, analytics, push-notifications and remote configuration.
 

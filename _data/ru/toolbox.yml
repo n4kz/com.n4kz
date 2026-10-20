@@ -3,11 +3,12 @@ items:
   -
     title: Навыки
     items:
-      - macOS, GNU/Linux, FreeBSD
+      - macOS, GNU/Linux
       - JavaScript (React Native, Node.js)
-      - C/Objective-C, iOS
+      - C/Objective-C, Swift, iOS
       - Perl (Catalyst, Mojolicious, DBIx::Class)
       - Git, Mercurial, Subversion
+      - Python
       - Bash
 
   -
@@ -16,7 +17,7 @@ items:
       - PostgreSQL, MySQL, SQLite
       - MongoDB, Redis, ELK Stack
       - Make, GCC, GDB, Vim, Xcode
-      - Sketch, Kite Compositor
+      - Sketch, Figma
       - Firebase, Travis CI, Codeclimate, Fastlane
       - Detox, Jest, Sentry, Crashlytics
 
@@ -29,3 +30,4 @@ items:
       - OAuth
       - JSON-RPC
       - IMAP
+      - gRPC
