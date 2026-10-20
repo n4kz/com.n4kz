@@ -14,7 +14,7 @@ local: install
 	JEKYLL_ENV=local bundle exec jekyll serve
 
 deploy: _site
-	scp -r _site/* $(HOST):$(TARGET)
+	scp -O -r _site/* $(HOST):$(TARGET)
 
 clean:
 	rm -rf _site $(ICONS) $(NORMALIZE)
